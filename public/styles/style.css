@@ -1,0 +1,454 @@
+/* Common Fonts import */
+
+@import url('https://fonts.googleapis.com/css2?family=Hepta+Slab&family=Outfit&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+/* General Common Styles */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+@media (max-width: 1000px) {
+    body{
+        max-width: 1000px
+    }
+}
+
+html {
+    font: normal 16px  sans-serif;
+    background-color: #f0f1f4;
+    scroll-behavior: smooth !important;
+}
+body{
+    background-image:url(/public/images/black2.jpg) ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+}
+
+.fondo{
+    opacity: 0.75;
+}
+
+ul, nav {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+a.btn {
+    color: #fff;
+    border-radius: 4px;
+    text-transform: uppercase;
+    background-color: #2196F3;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Section Common Styles */
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 100px;
+}
+
+
+
+section h3.title {
+    color:#cfc2a0;
+    text-transform: capitalize;
+    font: bold 32px 'Outfit', sans-serif;
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+section p {
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Hepta Slab', serif;
+    padding: 0 20px;
+    line-height: 2;
+}
+
+ul.square {
+    width: 100%;
+    display: flex; /*para que puedes utilizar la flex-wrap*/
+    flex-wrap: wrap; /*hace que cuando achique la pantalla se ponga abajo uno de otro el contenido*/
+    justify-content: center;
+}
+
+
+/* Header Section */
+
+
+header {
+    position: absolute;  /*antepone las cosas(enviar para delante)*/
+    top: 0;
+    left: 0;
+    z-index: 1;/*numero menor(1) envia hacia atras*/
+    width: 100%;/*tiene que ir indisdensable*/
+    display: flex; /*indispensable*/
+    justify-content: space-between;/*indispensable*/
+    align-items: center;/*centra los items de la barra de navegacion*/
+    color: black;
+    padding: 35px 100px 0;
+    font-weight: bold ;
+}
+
+header h2 { /**/
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    margin: 0 15px;
+}
+
+header nav li:first-child {
+    margin-left: 0;
+}
+
+header nav li:last-child {
+    margin-right: 0;
+}
+
+
+
+/*aca nos quedamos*/
+/* home Section */
+
+/*Division*/
+.Division1{
+    transform: rotate(180deg);
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between;
+   /*align-items: flex-start;*/
+    min-height: 100vh;/*vh, depende del tamanio de la pantalla y la imagen acomoda sus pixeles*/
+    color: #fff;
+    background-color: #414A4F;
+    text-align: center;
+
+}
+
+
+
+.home a.btn {
+    padding: 20px 46px;
+}
+
+.home img{
+    width: 35%;
+    height: 800px;
+    opacity:0.75;
+    padding: 40px;
+    border-radius:40px;
+
+    /*position: absolute;
+    margin-left: 1200px;
+    top: 80px;
+    padding: 20px;
+    opacity: 0.75;
+    border-radius: 15px;*/
+}
+
+
+h3{
+    padding: 40px;
+    color: #000000;
+}
+h1{
+    display: flex;
+    padding-bottom: 50px;
+    justify-content: center;
+}
+h2{
+    font-size: 40px;
+}
+p{
+    color:  #121114;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+}
+
+
+/*Section Planes*/
+
+section.Planes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    background-color: #f8f8ff;
+    opacity: 0.99;
+}
+.Planes1,.Planes2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.Planes1 img{
+    width: 50%;
+}
+.Planes2 img{
+    width: 50%;
+}
+
+
+
+
+/* Planes-for-Business Section */
+.Planes-for-Business{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #3d3d3d;
+}
+.Planes-for-Business h3{
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #414A4F;
+}
+
+
+
+/*nofunciona*/
+
+
+
+/*@media (max-width: 1000px) {
+    .home {
+
+        min-height: 600px;
+        flex-direction: column;
+    }
+    .home h3 {
+        font-size: 24px;
+    }
+    .home a.btn {
+        padding: 15px 40px;
+    }
+}*/
+
+.obtener1{
+    display: flex;
+    flex-direction: column;
+}
+
+section.obtener{
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    opacity: 0.99;
+}
+.obtener1,.obtener2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.obtener1 img{
+    width: 50%;
+}
+.obtener2 img{
+    width: 50%;
+}
+.img-descarga1 img{
+    width: 50%;
+}
+.img-descarga2 img{
+    width: 50%;
+}
+
+/*Section footer*/
+
+.footer1{
+
+    padding: 90px;
+    background: #252525;
+    opacity: 0.99999;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer2{
+    border-top: #c8b57d27 solid 1px;
+    padding: 10px;
+    background: #252525;
+    display: flex;
+    justify-content: space-between;
+    height: 15px;
+    color: #ffffff;
+    font-size: 10px;
+}
+
+.footer2 ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+
+}
+.footer2 ul li{
+
+    margin-left: 75px;
+    margin-right: 25px;
+
+}
+
+section.footer{
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+
+}
+
+@media (max-width: 1000px) { /*cuando la pantalla llegue a 1000px es como para tablet*/
+    section {
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 600px) {/*cuando la pantalla llegue a 600px es como para 600.   SI ES 601 TOMA EL MAX-WIDTH 1000PX*/
+    section {
+        padding: 80px 30px;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+        padding: 20px 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;  /*acme studio lo pone vertical*/
+    }
+    header h2 {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 1000px) {
+    .home {
+        min-height: 600px;
+        flex-direction: column;
+    }
+    .home h3 {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+    .home a.btn {
+        padding: 15px 40px;
+    }
+    .home img{
+        width: 400px;
+        height: 600px;
+    }
+}
+@media (max-width: 400px) {
+   .home h3{
+       margin-top: 60px;
+   }
+}
+
+
+@media (max-width: 800px) {
+    .obtener {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 800px) {
+    .Planes {
+        flex-basis: 100%;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 490px) {
+    .footer {
+        flex-basis: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px;
+        align-items: center;
+    }
+    .footer1,.footer2{
+
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .buttons_networks_socials{
+
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .footer img{
+        padding: 20px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+@media (max-width: 800px) {
+
+    .columna1 ol li:last-child{
+        flex-direction: column;
+    }
+
+}
+@media (max-width: 800px) {
+
+    .servicios{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
